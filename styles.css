@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Titres en mode sombre */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff;
+}
+
+/* Liens en mode sombre */
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode nav a:hover {
+    color: #cccccc;
+}
+
+/* Texte dans les sections en mode sombre */
+body.dark-mode section p,
+body.dark-mode section li,
+body.dark-mode section span {
+    color: #e0e0e0;
+}
+
+/* Formulaire en mode sombre */
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #999;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #ffffff;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+h1, h2 {
+    color: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+} 
+
+/* Bouton pour basculer entre les modes */
+#theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Mode sombre pour le bouton */
+body.dark-mode #theme-toggle {
+    background-color: #333;
+    color: #ffffff;
+    
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #f5f5f5;
+}
+
+.alinea {
+    text-indent: 30px;
+}
+
+/*Style pour la section Acceuil */
+#acceuil {
+    padding: 6rem 2rem; /* Espacement interne */
+    max-width: 1200px; /* Limite la largeur du contenu */
+    margin: 0 auto; /* Centre la section */
+    margin-bottom: 4rem; /* Espace entre Accueil et Mes Projets */
+
+}
+
+
+/* Style pour la section du titre BTS SIO, Veille Technologique et Patrimoins Informatique */
+#bts-sio-header, #veille-technologique-header, #patrimoine_informatique-header {
+    background-image: url('fond-ecran.jpg'); /* Remplace par l'URL de ton image */
+    background-size: cover;
+    background-position:center ;
+    height: 300px; /* Ajuste la hauteur selon tes besoins */
+    width: 9000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour le texte */
+}
+
+#bts-sio-header, #veille-technologique-header, #patrimoine_informatique-header h1 {
+    font-size: 4rem; /* Taille du titre */
+    font-weight: bold;
+} 
+
+#bts-sio-content {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px 500px; /* La première colonne prend 1 fraction, la deuxième prend 2 fractions */
+        gap: 100px; /* Espace entre les colonnes */
+    }
+    
+    .grid-column {
+        padding: 20px;
+    }
+    
+    #col1 {
+       justify-content: center;
+    }
+    
+    #col2 {
+        justify-content: center;
+    }
+
+}
+
+#bts-sio-content h2 {
+    text-transform: uppercase;
+    justify-content: center;
+    }
+
+#bts-sio-content h3 {
+    justify-content: center;
+    color: #ee6363; ;
+    }
+
+
+.text-inoreader {
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+.organisation_veille {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.image_organisation_veille {
+    max-width: 40%;
+    height: auto;
+}
+
+.image {
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    margin-left: 80px;
+    width: 200px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    transition: transform 0.2s;
+    cursor: pointer; /* Change le curseur en pointeur */
+}
+
+img:hover {
+    transform: scale(1.05);
+  }
+.text {
+    text-indent: 30px;
+    flex: 1; /* Le texte prend tout l'espace restant */
+}
+
+/* Style de la boîte modale */
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Reste en place lors du défilement */
+    z-index: 1000; /* Au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond semi-transparent */
+    overflow: auto; /* Permet le défilement si nécessaire */
+}
+
+/* Contenu de la boîte modale (l'image agrandie) */
+.modal-contenu {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 5%;
+}
+
+/* Bouton pour fermer la boîte modale */
+.fermer {
+    position:absolute ;
+    top: 0px;
+    right: 75px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fermer:hover {
+    color: #ccc; /* Changement de couleur au survol */
+}
+
+/* Style pour la section "Comment suivre l'actualité autour de la veille technologique ?" */
+.info-methods-section {
+    display: flex;
+    align-items: flex-start; /* Alignement en haut */
+    gap: 100px; /* Espace entre la liste et l'image */
+    margin-top: 20px;
+}
+
+.info-methods-list {
+    margin-top: 25px;
+    flex: 1/2; /* La liste prend l'espace disponible */
+    list-style-type: disc; /* Ajoute des puces à la liste */
+    margin-left: 20px; /* Espace pour les puces */
+}
+
+.info-methods-image img {
+    max-width: 300px; /* Largeur maximale de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 10px; /* Optionnel : arrondir les coins de l'image */
+}
+
+#mes-projets h2 {
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: inherit;
+}
+
+/* Barre de recherche */
+#search {
+    width: 50%; /* Largeur réduite à 50% */
+    padding: 10px;
+    margin: 0 auto 20px; /* Centre la barre de recherche */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: block; /* Assure que la barre de recherche est un bloc */
+    max-width: 1200px;
+}
+
+body.dark-mode #search {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+/* Filtres */
+.filters {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* Couleur des boutons */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.filters button.active {
+    background-color: #3700b3;
+}
+
+.filters button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+body.dark-mode .filters button {
+    background-color: #444;
+}
+
+body.dark-mode .filters button.active {
+    background-color: #6200ea;
+}
+
+/* Grille de TP */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px; /* Espacement entre les colonnes */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff; /* Fond blanc en mode clair */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Prend toute la largeur disponible */
+    min-height: 150px; /* Hauteur minimale */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #6200ea; /* Couleur des boutons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.card a:hover {
+    background-color: #3700b3;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+}
+
+body.dark-mode .card h3 {
+    color: #fff;
+}
+
+body.dark-mode .card p {
+    color: #e0e0e0;
+}
+
+
+/* Style de Patrimoine Technologique */
+#patrimoine_informatique-content {
+    .container {
+        width: 90%; /* Largeur du conteneur */
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 colonnes pour 6 cartes */
+        gap: 20px; /* Espacement entre les cartes */
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    .card img {
+        max-width: 60%;
+        border-radius: 8px;
+    }
+
+    .card p {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #333;
+    }
+}
+
+/* Mode sombre pour les cartes dans la section Patrimoine Informatique */
+body.dark-mode #patrimoine_informatique-content .card  {
+    background-color: #333;
+}
+
+body.dark-mode #patrimoine_informatique-content .card p {
+    color: #e0e0e0;
+}
+
+.list_gestion_parc {
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
+.card_gestion_parc {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.card_gestion_parc img {
+    max-width: 40%;
+    border-radius: 8px;
+}
+
+.card_gestion_parc p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+body.dark-mode .card_gestion_parc  {
+    background-color: #333;
+}
+
+body.dark-mode .card_gestion_parc {
+    color: #e0e0e0;
+}
+
+/* Style pour la section "Pourquoi effectuer cette gestion ?" */
+.why-manage-section {
+    display: flex;
+    align-items: flex-start; /* Alignement en haut */
+    gap: 20px; /* Espace entre la liste et l'image */
+    margin-top: 20px;
+}
+
+.why-manage-list {
+    flex: 1; /* La liste prend l'espace disponible */
+}
+
+.why-manage-image img {
+    max-width: 150px; /* Largeur maximale de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 10px; /* Optionnel : arrondir les coins de l'image */
+}
+
+/* Style du footer */
+.contact {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #444;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: #1e90ff;
+}
+
+.footer-link i {
+    font-size: 20px;
+}
+
+
+/* Responsivité */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur les écrans moyens */
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #patrimoine_informatique-content .row {
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes sur les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        display: block;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les tablettes */
+    }
+    #patrimoine_informatique-content .row {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur les tablettes */
+    }
+    .why-manage-section {
+        flex-direction: column; /* Empile l'image et la liste sur les petits écrans */
+    }
+
+    .why-manage-image img {
+        max-width: 100%; /* L'image prend toute la largeur sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 colonne sur les mobiles */
+    }
+    #patrimoine_informatique-content .row {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les mobiles */
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio VL</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cpu.png" type="image/x-icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Bouton pour basculer entre le mode clair et sombre -->
+    <button id="theme-toggle" aria-label="Basculer entre le mode clair et sombre">
+        <i class="fas fa-sun"></i> <!-- Icône soleil par défaut -->
+    </button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#mes_projets">Mes Projets</a></li>
+            <li><a href="bts_sio.html">BTS SIO</a></li>
+            <li><a href="#patrimoine_informatique-header">Patrimoine Informatique</a></li>
+            <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="patrimoine_informatique-header">
+        <h1>Patrimoine Informatique</h1>
+    </section>
+
+    <section id="patrimoine_informatique-content">
+        <h2>- Qu'est ce que le patrimoine informatique ?</h2>
+        <p class="alinea">Le patrimoine informatique regroupe tous les biens matériels, mais également tous les logiciels du parc informatique d'une entreprise.</p>
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <img src="icone_patrimoine/poste__travail.png" alt="Icone d'un ordinateur">
+                    <p>Les postes de travail et les périphériques</p>
+                </div>
+                <div class="card">
+                    <img src="icone_patrimoine/serveur.png" alt="Image d'un serveur informatique">
+                    <p>Les serveurs, les NAS et le Cloud</p>
+                </div>
+                <div class="card">
+                    <img src="icone_patrimoine/commutateur-de-reseau.png" alt="Image d'un switch réseau">
+                    <p>Les équipements réseaux et le réseau physique</p>
+                </div>
+
+                <div class="card">
+                    <img src="icone_patrimoine/stockage-informatique.png" alt="Image qui caractérise les données informatiques">
+                    <p>Les données informatiques</p>
+                </div>
+                <div class="card">
+                    <img src="icone_patrimoine/logiciel.png" alt="Icone de logiciel">
+                    <p>Les logiciels, applications et l'ensemble des licences</p>
+                </div>
+                <div class="card">
+                    <img src="icone_patrimoine/telephonet.png" alt="Icone d'un smartphone">
+                    <p>Les smartphones, tablettes et appareils mobiles</p>
+                </div>
+            </div>
+        </div>
+        <h2>- Comment gérer son patrimoine informatique ?</h2>
+        <p class="alinea">La gestion de parc informatique nécessite l’utilisation d’outils et de procédures spécifiques avec :
+            <ul class="list_gestion_parc">
+                <li>Utiliser un outil de gestion de parc informatique</li>
+                <li>Automatiser la mise à jour des matériels</li>
+                <li>Définir des profils de postes pour homogénéiser votre parc informatique</li>
+                <li>Respecter le cycle de vie des postes pour un fonctionnement optimal</li>
+            </ul>
+        </p>
+        <br>
+        <h2>- Quels outils pour gérer son parc informatique ?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="card_gestion_parc">
+                    <img src="icone_patrimoine/logo-glpi.png" alt="Icone de GLPI">
+                    <p>GLPI (Gestionnaire Libre de Parc Informatique) est une solution libre pour gérer son parc informatique et de ticketing facilement.</p>
+                </div>
+                <div class="card_gestion_parc">
+                    <img src="icone_patrimoine/ocs_inventory.png" alt="Icone de D'OCS Inventory">
+                    <p>OCS Inventory (Open Computer and Software) est une application permettant de réaliser un inventaire sur la configuration matérielle des machines du réseau, 
+                        sur les logiciels qui y sont installés et de visualiser ces informations grâce à une interface web.</p>
+                </div>
+            </div>
+        </div>
+        <h2>- Pourquoi effectuer cette gestion ?</h2>
+        <div class="why-manage-section">
+            <div class="why-manage-image">
+                <img src="icone_patrimoine/questionnement.png" alt="Illustration de la gestion de parc informatique">
+            </div>
+            <div class="why-manage-list">
+                <p class="alinea">Gérer son parc informatique permet de :</p>
+                <ul class="list_gestion_parc">
+                    <li>Recenser et localiser l’ensemble des éléments du parc informatique</li>
+                    <li>Protéger le parc informatique avec des outils de sécurité avancés.</li>
+                    <li>Assurer la maintenance préventive et le dépannage des équipements informatiques.</li>
+                    <li>Définir l’organisation du système informatique.</li>
+                    <li>Administrer les serveurs et équipements réseau.</li>
+                    <li>Gérer l’ensemble des prestataires tiers liés à l’informatique</li>
+                    <li>Mettre en place des procédures liés au parc informatique</li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+    </section>
+    <div class="contact" id="contact">
+        <footer>
+            <div class="footer-content">
+                <a href="mailto:valentin.lesnes0@gmail.com" class="footer-link">
+                    <i class="fas fa-envelope"></i> Mon email
+                </a>
+                <a href="https://www.linkedin.com/in/valentin-lesnes-747472294/" target="_blank" class="footer-link">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/Valentil3" target="_blank" class="footer-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
+<script src="script.js"></script>
+</html>

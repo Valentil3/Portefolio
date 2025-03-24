@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio VL</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cpu.png" type="image/x-icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Bouton pour basculer entre le mode clair et sombre -->
+    <button id="theme-toggle" aria-label="Basculer entre le mode clair et sombre">
+        <i class="fas fa-sun"></i> <!-- Icône soleil par défaut -->
+    </button>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#mes_projets">Mes Projets</a></li>
+            <li><a href="bts_sio.html">BTS SIO</a></li>
+            <li><a href="patrimoine_informatique.html">Patrimoine Informatique</a></li>
+            <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Je suis Nathan, développeur web passionné par le code et l'innovation.</p>
+    </section>
+    
+    <section id="mes_projets">
+        <h2>Mes Projets et TP</h2>
+    
+        <!-- Barre de recherche -->
+        <input type="text" id="search" placeholder="Rechercher un TP par titre..." />
+    
+        <!-- Filtres par thème -->
+        <div class="filters">
+            <button data-filter="all" class="active">Tous</button>
+            <button data-filter="reseaux">Réseaux</button>
+            <button data-filter="windows">Windows</button>
+            <button data-filter="linux">Linux</button>
+            
+        </div>
+        <h2>Réseaux</h2>
+        <!-- Grille de TP -->
+        <div class="grid">
+            <!--Réseaux-->
+            <div class="card" data-theme="reseaux">
+                <h3>Access Lists Cisco</h3>
+                <p>Permissions sur un réseau avec Cisco Packet Tracer.</p>
+                <a href="fichiers_reseaux/AccessListsCisco.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/AccessListsCisco.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>DHCP</h3>
+                <p>Attribution automatique d'adresse IP.</p>
+                <a href="fichiers_reseaux/DHCP.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/DHCP.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>Fail2ban</h3>
+                <p>Service qui permet d'exécuté des actions lorsqu'un comportement malveillant est détécté.</p>
+                <a href="fichiers_reseaux/Fail2ban.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/Fail2ban.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>HSRP sur Cisco</h3>
+                <p>Protocole de Cisco permettant la continuité de service sur les routeurs.</p>
+                <a href="fichiers_reseaux/HSRP_Réel.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/HSRP_Réel.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>Routage dynamic RIP </h3>
+                <p>Routage dynamic entre les réseaux</p>
+                <a href="fichiers_reseaux/Routage_Dynamic.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/Routage_Dynamic.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>SNMP</h3>
+                <p>Protocole destiné au transfert d'informations de gestion sur des réseaux.</p>
+                <a href="fichiers_reseaux/SNMP.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/SNMP.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>Spanning Tree Protocol </h3>
+                <p>Protocol qui permet la continuité de service au niveau des switchs.</p>
+                <a href="fichiers_reseaux/Spanning_tree.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/Spanning_tree.doc" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>Virtual Private Network (VPN) </h3>
+                <p>Permet de créer une connexion réseau privée entre plusieurs appareils sur Internet.</p>
+                <a href="fichiers_reseaux/VPN.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/VPN.docx" download>Télécharger</a>
+            </div>
+            <div class="card" data-theme="reseaux">
+                <h3>VLAN Trunking Protocol par Cisco </h3>
+                <p>Protocole de Cisco qui permet de configurer et d'administrer les VLAN sur un périphérique de la marque.</p>
+                <a href="fichiers_reseaux/VTP.pdf" target="_blank">Visionner</a>
+                <a href="fichiers_reseaux/VTP.docx" download>Télécharger</a>
+            </div>
+        </div>
+
+        <h2>Windows</h2>
+        <!-- Exemple de TP Windows -->
+        <div class="grid">
+            <div class="card" data-theme="windows">
+                <h3>TP 1 : Installation de Windows</h3>
+                <p>Guide d'installation de Windows Server.</p>
+                <a href="lien_vers_tp1.pdf" target="_blank">Visionner</a>
+                <a href="lien_vers_tp1.pdf" download>Télécharger</a>
+            </div>
+        </div>
+        <h2>Linux</h2>
+        <!-- Exemple de TP Linux -->
+        <div class="grid">
+            <div class="card" data-theme="linux">
+                <h3>TP 2 : Commandes Linux</h3>
+                <p>Découverte des commandes de base sous Linux.</p>
+                <a href="lien_vers_tp2.pdf" target="_blank">Visionner</a>
+                <a href="/Data/Enseignement Supérieur/BTS_SIO/Stage/Stage SIO 1ere Annee/rapport de stage exemple.pdf" download>Télécharger</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact" id="contact">
+        <footer>
+            <div class="footer-content">
+                <a href="mailto:valentin.lesnes0@gmail.com" class="footer-link">
+                    <i class="fas fa-envelope"></i> Mon email
+                </a>
+                <a href="https://www.linkedin.com/in/valentin-lesnes-747472294/" target="_blank" class="footer-link">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/Valentil3" target="_blank" class="footer-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
+<script src="script.js"></script>
+</html>
