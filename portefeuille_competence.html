@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Lesnes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cpu.png" type="image/x-icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Bouton pour basculer entre le mode clair et sombre -->
+    <button id="theme-toggle" aria-label="Basculer entre le mode clair et sombre">
+        <i class="fas fa-sun"></i> <!-- Icône soleil par défaut -->
+    </button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bts_sio.html">Le BTS SIO</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Parcours de professionnalisation <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="projets_scolaires.html">Projets Scolaires</a>
+                    <a href="parcours_professionnel.html">Parcours Professionnel</a>
+                    <a href="portefeuille_competence.html">Portefeuille de Compétence</a>
+                </div>
+            </li>
+            <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="patrimoine_informatique.html">Patrimoine Informatique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="portefeuille_competence_header">
+        <h1>Portefeuille de Compétences</h1>
+    </section>
+    <section id="portefeuille-content">
+        <h4>Vous retrouverez ci-joint toutes les compétences assimilées lors de mes deux années de BTS SIO au sein de mon centre de formatione et en immersion professionnelle.</h4>
+        <div class="pdf-card-container_portefeuille">
+            <div class="pdf-card_portefeuille">
+                <div class="pdf-preview_portefeuille">
+                    <img src="parcours_professionnel/attestion_de_stage_Techne.png" alt="Aperçu Portefeuille de Compétences">
+                    <div class="pdf-overlay_portefeuille">
+                        <a href="portefeuille_competence/Tableau_de_synthèse.pdf" target="_blank" class="pdf-open-btn_portefeuille">
+                            <i class="fas fa-external-link-alt"></i> Ouvrir le PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="pdf-info">
+                    <h4>Portefeuille de Compétences</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="contact" id="contact">
+    <footer>
+        <div class="footer-content">
+            <a href="mailto:valentin.lesnes0@gmail.com" class="footer-link">
+                <i class="fas fa-envelope"></i> Mon email
+            </a>
+            <a href="https://www.linkedin.com/in/valentin-lesnes-747472294/" target="_blank" class="footer-link">
+                <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+            <a href="https://github.com/Valentil3" target="_blank" class="footer-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Lesnes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cpu.png" type="image/x-icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+</head>
+
+<body>
+    <!-- Conteneur pour les particules -->
+    <div id="particles-js"></div>
+
+    <!-- Bouton pour basculer entre le mode clair et sombre -->
+    <button id="theme-toggle" aria-label="Basculer entre le mode clair et sombre">
+        <i class="fas fa-sun"></i> <!-- Icône soleil par défaut -->
+    </button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bts_sio.html">Le BTS SIO</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Parcours de professionnalisation <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="projets_scolaires.html">Projets Scolaires</a>
+                    <a href="parcours_professionnel.html">Parcours Professionnel</a>
+                    <a href="portefeuille_competence.html">Portefeuille de Compétence</a>
+                </div>
+            </li>
+            <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="patrimoine_informatique.html">Patrimoine Informatique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="parcours_professionnel-header">
+        <h1>Parcours Professionnel</h1>
+    </section>
+    <section id="parcours_professionnel-content">
+        <h3>Vous retrouverez ci-dessous les différents stages que j'ai pu effectuer :</h3>
+
+         <!-- 1er stage -->
+        <div class="entreprise-section">
+            <div class="entreprise-logo">
+                <img src="parcours_professionnel/Logo-Techné.png" alt="Logo Techné">
+            </div>
+            <div class="entreprise-description">
+                <h4> <u>Première année</u> : Techné</h4>
+                <p>Situé à Morancé (69)</p>
+            </div>
+        </div>
+        <div class="pdf-content-container">
+            <!-- Texte à gauche -->
+            <div class="pdf-description">
+                <h4>Missions Principales :</h4>
+                <ul>
+                    <li>Déploiement des Serveurs WDS et MDT</li>
+                    <li>Support aux utilisateurs Windows</li>
+                    <li>Administration & Cartographie réseau</li>
+                    <li>Dépannage d'ordinateurs</li>
+                </ul>
+            </div>
+
+        <div class="pdf-card-container">
+            <!-- Carte PDF -->
+            <div class="pdf-card">
+                <div class="pdf-preview">
+                    <img src="parcours_professionnel/Rapport_de_stage_Techne_1.png" alt="Aperçu Rapport de Stage 1ere année">
+                    <div class="pdf-overlay">
+                        <a href="parcours_professionnel/Rapport_de_stage_Techne.pdf" target="_blank" class="pdf-open-btn">
+                            <i class="fas fa-external-link-alt"></i> Ouvrir en plein écran
+                        </a>
+                    </div>
+                </div>
+                <div class="pdf-info">
+                    <h4>Rapport de Stage réalisé en 1ère année</h4>
+                    <p>Entreprise Techné - Durée: 5 semaines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parcours_professionnel-content">
+             <!-- 2eme stage -->
+             <div class="entreprise-section">
+                <div class="entreprise-logo">
+                    <img src="parcours_professionnel/logo_isinet.png" alt="Logo Isinet Informatique ">
+                </div>
+                <div class="entreprise-description">
+                    <h4> <u>Deuxième année</u> : Isinet Informatique</h4>
+                    <p>Situé à Belleville en Beaujolaos (69)</p>
+                </div>
+            </div>
+            <div class="pdf-content-container">
+            <!-- Texte à gauche -->
+            <div class="pdf-card-container">
+                <!-- Carte PDF -->
+                <div class="pdf-card">
+                    <div class="pdf-preview">
+                        <img src="parcours_professionnel/Rapport_de_Stage_Isinet_1.png" alt="Aperçu Rapport de Stage 1ere année">
+                        <div class="pdf-overlay">
+                            <a href="parcours_professionnel/Rapport de Stage Isinet.pdf" target="_blank" class="pdf-open-btn">
+                                <i class="fas fa-external-link-alt"></i> Ouvrir en plein écran
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pdf-info">
+                        <h4>Rapport de Stage réalisé en 1ère année</h4>
+                        <p>Entreprise Techné - Durée: 5 semaines</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-description">
+                <h4>Missions Principales :</h4>
+                <ul>
+                    <li>Installation ordinateurs fixes et portable sous Windows 10 & 11</li>
+                    <li>Dépannage ordinateurs fixes et portable sous Windows 10 & 11</li>
+                    <li>Mise en place de Vlans</li>
+                    <li>Refonte procédures de sauvegarde à partir d'un modèle</li>
+                </ul>
+            </div>
+    </section>
+    <section id="attestation_stage">
+        <h3><u>Vous retrouverez ci-dessous les attestations de mes différents stages :</u></h3>
+        
+        <div class="attestations-container">
+            <!-- Première attestation -->
+            <div class="attestation-card">
+                <div class="attestation-preview">
+                    <img src="parcours_professionnel/attestion_de_stage_Techne.png" alt="Attestation de Stage Techné">
+                    <div class="attestation-overlay">
+                        <a href="parcours_professionnel/attestion_de_stage_Techne.pdf" target="_blank" class="attestation-btn">
+                            <i class="fas fa-external-link-alt"></i> Ouvrir le PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="attestation-info">
+                    <p>Stage de première année - Techné</p>
+                </div>
+            </div>
+            
+            <!-- Deuxième attestation -->
+            <div class="attestation-card">
+                <div class="attestation-preview">
+                    <img src="parcours_professionnel/Attestation_de_stage_isinet_valentin_signé.png" alt="Attestation de Stage Isinet">
+                    <div class="attestation-overlay">
+                        <a href="parcours_professionnel/Attestation_de_stage_isinet_valentin_signé.pdf" target="_blank" class="attestation-btn">
+                            <i class="fas fa-external-link-alt"></i> Ouvrir le PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="attestation-info">
+                    <p>Stage de deuxième année - Isinet Informatique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bilan-stages">
+        <h3><u>Bilan global des stages</u></h3>
+        
+        <div class="container">
+            <div class="row">
+                <!-- Apports globaux -->
+                <div class="card">
+                    <img src="parcours_professionnel/apports.png" alt="Icone apports">
+                    <h4>Apports principaux</h4>
+                    <div class="card-content">
+                        <h5>Stage Techné</h5>
+                        <ul>
+                            <li>Esprit d'équipe</li>
+                            <li>Communication</li>
+                            <li>Connaissances Techniques</li>
+                            <li>Attitude Professionnelle</li>
+                        </ul>
+                        
+                        <h5>Stage Isinet Informatique</h5>
+                        <ul>
+                            <li>Autonomie</li>
+                            <li>Rigueur</li>
+                            <li>Connaissances Techniques</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Difficultés globales -->
+                <div class="card">
+                    <img src="parcours_professionnel/difficultes.png" alt="Icone difficultés">
+                    <h4>Difficultés rencontrées</h4>
+                    <div class="card-content">
+                        <h5>Stage Techné</h5>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Intégration</li>
+                            <li>Adaptation</li>
+                        </ul>
+                        
+                        <h5>Stage Isinet Informatique</h5>
+                        <ul>
+                            <li>Intégration</li>
+                            <li>Rigueur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact" id="contact">
+        <footer>
+            <div class="footer-content">
+                <a href="mailto:valentin.lesnes0@gmail.com" class="footer-link">
+                    <i class="fas fa-envelope"></i> Mon email
+                </a>
+                <a href="https://www.linkedin.com/in/valentin-lesnes-747472294/" target="_blank" class="footer-link">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/Valentil3" target="_blank" class="footer-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script> --> 
+<script src="script.js"></script>
+</html>

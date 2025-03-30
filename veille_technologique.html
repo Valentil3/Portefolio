@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio VL</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="cpu.png" type="image/x-icon">
-        <!-- Font Awesome pour les icônes -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Lesnes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cpu.png" type="image/x-icon">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
 <body>
     <!-- Bouton pour basculer entre le mode clair et sombre -->
     <button id="theme-toggle" aria-label="Basculer entre le mode clair et sombre">
@@ -19,10 +18,17 @@
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html#mes_projets">Mes Projets</a></li>
-            <li><a href="bts_sio.html">BTS SIO</a></li>
-            <li><a href="patrimoine_informatique.html">Patrimoine Informatique</a></li>
+            <li><a href="bts_sio.html">Le BTS SIO</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Parcours de professionnalisation <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="projets_scolaires.html">Projets Scolaires</a>
+                    <a href="parcours_professionnel.html">Parcours Professionnel</a>
+                    <a href="portefeuille_competence.html">Portefeuille de Compétence</a>
+                </div>
+            </li>
             <li><a href="veille_technologique.html">Veille Technologique</a></li>
+            <li><a href="patrimoine_informatique.html">Patrimoine Informatique</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>

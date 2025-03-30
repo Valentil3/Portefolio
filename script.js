@@ -161,3 +161,48 @@ document.querySelectorAll('.card a[download]').forEach(link => {
         forceDownload(fileUrl, fileName); // Force le téléchargement
     });
 });
+
+
+
+
+// Fonctions pour le modal PDF
+function openPdfModal(pdfUrl) {
+    const modal = document.getElementById('pdfModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    
+    pdfFrame.src = pdfUrl;
+    modal.style.display = "block";
+    
+    // Empêche le défilement de la page en arrière-plan
+    document.body.style.overflow = "hidden";
+}
+
+function closePdfModal() {
+    const modal = document.getElementById('pdfModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    
+    pdfFrame.src = "";
+    modal.style.display = "none";
+    
+    // Rétablit le défilement
+    document.body.style.overflow = "auto";
+}
+
+// Fermer le modal en cliquant à l'extérieur
+window.onclick = function(event) {
+    const modal = document.getElementById('pdfModal');
+    if (event.target == modal) {
+        closePdfModal();
+    }
+}
+
+
+document.querySelectorAll('.pdf-preview').forEach(preview => {
+    preview.addEventListener('mousemove', (e) => {
+        const img = preview.querySelector('img');
+        const rect = preview.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width * 100;
+        const y = (e.clientY - rect.top) / rect.height * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+    });
+});
