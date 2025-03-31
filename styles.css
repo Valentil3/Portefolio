@@ -739,13 +739,14 @@ body.dark-mode .card_gestion_parc  {
     padding: 20px 0;
     text-align: center;
     border-top: 2px solid #444;
+    font-size: 16px;
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .footer-link {
@@ -754,7 +755,7 @@ body.dark-mode .card_gestion_parc  {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+
 }
 
 .footer-link:hover {
@@ -762,7 +763,7 @@ body.dark-mode .card_gestion_parc  {
 }
 
 .footer-link i {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* Parcours Professionnel */
@@ -789,6 +790,7 @@ body.dark-mode .card_gestion_parc  {
     height: auto;
     max-height: 100px;
     object-fit: contain;
+    background-color: white;
 }
 
 .entreprise-description {
