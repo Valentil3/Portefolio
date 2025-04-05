@@ -512,6 +512,129 @@ img:hover {
     border-radius: 10px; /* Optionnel : arrondir les coins de l'image */
 }
 
+/* Styles pour les cartes avec images */
+.veille-articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.veille-article-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; /* Pour que le border-radius s'applique à l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.veille-article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-image-container {
+    height: 180px; /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+}
+
+.article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que l'image couvre tout l'espace */
+    transition: transform 0.5s ease;
+}
+
+.veille-article-card:hover .article-image {
+    transform: scale(1.05); /* Effet zoom au survol */
+}
+
+.article-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.veille-article-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.article-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.veille-article-card p {
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.article-link {
+    color: #6200ea;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+    margin-top: auto; /* Pousse le lien vers le bas */
+}
+
+.article-link:hover {
+    color: #3700b3;
+}
+
+/* Mode sombre */
+body.dark-mode .veille-article-card {
+    background-color: #333;
+}
+
+body.dark-mode .veille-article-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .veille-article-card p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .article-date {
+    color: #bbb;
+}
+
+body.dark-mode .article-link {
+    color: #bb86fc;
+}
+
+body.dark-mode .article-link:hover {
+    color: #9a67ea;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .veille-articles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .veille-articles-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-image-container {
+        height: 220px; /* Un peu plus grand sur mobile */
+    }
+}
+
+
 #mes-projets h2 {
     text-align: left;
     margin-top: 2rem;
@@ -1211,7 +1334,7 @@ body.dark-mode #bilan-stages .card li {
 
 .pdf-preview_portefeuille img {
     width: 100%;
-    height: 100%;
+    height: 150%;
     object-fit: cover;
     transition: transform 0.3s;
 }
